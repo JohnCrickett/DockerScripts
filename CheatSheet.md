@@ -3,7 +3,7 @@ To build an image:
 docker build -t <image name> -f <path>/Dockerfile <path>/
 ```
 
-To run the image if it doesn't have a service already running
+To run the image if it doesn't have a service already running (i.e. no ENTRYPOINT)
 
 ```
 docker run -it -d --name <container name> <image name> /bin/bash
