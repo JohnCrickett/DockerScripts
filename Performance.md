@@ -6,3 +6,10 @@ Docker > Preferences > Advanced
 and allowing it access to more CPU and RAM resource.
 
 There are a few other areas that can be improved, see: https://markshust.com/2018/01/30/performance-tuning-docker-mac
+
+You can check performance stats of Docker containers using:
+
+```
+docker stats
+```
+For full documentation see: https://docs.docker.com/engine/reference/commandline/stats/
