@@ -26,7 +26,7 @@ docker exec -it <container name> <executable>
 
 i.e. to get a bash shell:
 ```
-docker exec -it pcbats /bin/bash
+docker exec -it <container name> /bin/bash
 ```
 
 to stop the container
