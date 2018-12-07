@@ -2,6 +2,10 @@ To build an image:
 ```
 docker build -t <image name> -f <path>/Dockerfile <path>/
 ```
+or:
+```
+docker-compose build
+```
 
 To list images:
 ```
@@ -23,6 +27,10 @@ To run an executable / command on the container
 ```
 docker exec -it <container name> <executable>
 ```
+or:
+```
+docker compose up
+```
 
 i.e. to get a bash shell:
 ```
@@ -32,6 +40,14 @@ docker exec -it <container name> /bin/bash
 to stop the container
 ```
 docker stop <container name>
+```
+or if run with -d:
+```
+docker-compose stop
+```
+otherwise:
+```
+docker-compose down
 ```
 
 to remove the container
