@@ -17,7 +17,7 @@ To remove an image:
 docker image rm <image name>
 ```
 
-To run the image if it doesn't have a service already running (i.e. no ENTRYPOINT)
+To run the image (detached) if it doesn't have a service already running (i.e. no ENTRYPOINT)
 
 ```
 docker run -it -d --name <container name> <image name> /bin/bash
@@ -30,6 +30,12 @@ docker exec -it <container name> <executable>
 or:
 ```
 docker compose up
+```
+
+You can set environment variables in a service’s containers with the -e option, i.e.:
+
+```
+docker run -e VARIABLE=VALUE ...
 ```
 
 i.e. to get a bash shell:
