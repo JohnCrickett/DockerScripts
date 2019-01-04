@@ -32,6 +32,13 @@ or:
 docker compose up
 ```
 
+To limit the CPUs available:
+```
+
+docker run -it --cpus=<value> <container name> 
+```
+See more on resource constraints at: https://docs.docker.com/config/containers/resource_constraints/
+
 You can set environment variables in a service’s containers with the -e option, i.e.:
 
 ```
