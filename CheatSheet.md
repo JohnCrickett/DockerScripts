@@ -31,6 +31,11 @@ or:
 ```
 docker compose up
 ```
+Grab the first container id and run bash on it:
+```
+docker exec -it `docker ps -q | cut -f1 -d' '` /bin/bash
+```
+
 
 To limit the CPUs available:
 ```
