@@ -23,6 +23,14 @@ To run the image (detached) if it doesn't have a service already running (i.e. n
 docker run -it -d --name <container name> <image name> /bin/bash
 ```
 
+If it does have an entrypoint:
+
+
+```
+docker run -it -d --entrypoint /bin/bash --name <container name> <image name> 
+```
+
+
 To run an executable / command on the container
 ```
 docker exec -it <container name> <executable>
