@@ -103,5 +103,5 @@ Forcing an abolsultely clean local build
 ```
 docker rm -vf $(docker ps -aq)
 docker rmi -f $(docker images -aq)
-docker builder prune
+docker builder prune --all
 ```
